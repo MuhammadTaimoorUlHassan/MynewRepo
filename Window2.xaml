@@ -1,0 +1,75 @@
+﻿<Window x:Class="LoginFenris.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginFenris"
+        mc:Ignorable="d"
+        ResizeMode="CanResize"
+        Width="1920"
+        Height="1080"
+        Title="Login">
+    <Grid Height="1080" Width="1920">
+        <Image Margin="721,62,899,912" Width="300" Height="90" Stretch="Uniform" Source="Imagesused/motion2coach.png" />
+        <Rectangle Height="2" Margin="10,179,3,898" Stroke="#FFF4BD00" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="2" Margin="10,185,3,892" Stroke="#FF7BB728" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="2" Margin="10,191,2,886" Stroke="#FF0469B4" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label Content="Select User Type" Margin="100,216,1542,809" Width="278" FontSize="35" Foreground="#FF525252"/>
+        <Border x:Name="stiker_border"    
+   BorderThickness="1"
+   BorderBrush="LightGray" 
+   CornerRadius="10"    
+   Background="White" Margin="425,356,1061,254" />
+        <Button x:Name="playerbutton" Height="457" Width="434" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="425,363,1061,260" Click="playerbutton_Click" >
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Imagesused/playinggolf.PNG" Height="455" Width="432" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="striker_" Content="Player" Margin="593,759,1229,268" Width="98" FontSize="30" FontWeight="Bold"/>
+        
+        <Border x:Name="coach_border"    
+            BorderThickness="1"
+            BorderBrush="LightGray" 
+            CornerRadius="10"    
+            Background="White" Margin="1049,356,437,254" />
+        
+        <Button Content="Next" Margin="953,334,870,702" Foreground="White" Background="#FF006AB3" FontSize="16" Width="97" Height="44" Click="Button_Click" />
+        <Button x:Name="coachbutton" Height="457" Width="434" Margin="1050,363,436,260" Click="coachbutton_Click" >
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Imagesused/coach2.PNG" Height="455" Width="432" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="coach_" Content="Coach" Margin="1235,759,565,268" Width="98" FontSize="30" FontWeight="Bold"/>
+    </Grid>
+</Window>

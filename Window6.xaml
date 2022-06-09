@@ -1,0 +1,124 @@
+﻿<Window x:Class="LoginFenris.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginFenris"
+        mc:Ignorable="d"
+        ResizeMode="CanResize"
+        Width="1920"
+        Height="1080"
+        Title="Login" >
+    <Grid Height="1080" Width="1920">
+        <Image Margin="721,62,899,912" Width="300" Height="90" Source="Imagesused/motion2coach.png" Stretch="Uniform" />
+        <Rectangle Height="2" Margin="10,179,3,898" Stroke="#FFF4BD00" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="2" Margin="10,185,3,892" Stroke="#FF7BB728" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="2" Margin="10,191,2,886" Stroke="#FF0469B4" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Label x:Name="nameofperson" Content="La" Margin="1747,106,99,945" FontSize="16" Foreground="#FF252733"/>
+        <Image x:Name="imageofperson" Height="43" Margin="1820,96,37,941" Width="63"/>
+
+        <Button Margin="1713,106,185,927" Content="Capture">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Imagesused/notificationimage.png"  />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image Height="10" Margin="1724,116,186,954" Width="10" Source="Imagesused/notificationimagered.png"/>
+        <Button Content="Settings" Margin="51,1004,1807,52" Background="White" Width="62" FontSize="16" BorderThickness="0"/>
+        <Image HorizontalAlignment="Stretch" Height="15.42" Margin="30,1008,1875,56.58" VerticalAlignment="Stretch" Width="15" Source="Imagesused/setting2.png"/>
+        <Button Content="Customer Support" Margin="164,1005,1614,53" Background="White" Width="142" FontSize="16" BorderThickness="0" Height="22"/>
+        <Image Height="15.42" Margin="145,1008,1760,56" Width="15" Source="Imagesused/customersport.png" />
+        <Button Content="What's new?" Margin="356,1005,1456,50" Background="White" Width="108" FontSize="16" BorderThickness="0" Height="25"/>
+        <Image Height="15.42" Margin="340,1010,1565,55" Width="15" Source="Imagesused/whatsnew.png"/>
+        <Border x:Name="capture_border"    
+   BorderThickness="1"
+   BorderBrush="LightGray" 
+   CornerRadius="10"    
+   Background="White"    
+   HorizontalAlignment="Stretch"    
+   VerticalAlignment="Stretch"    
+   Width="400"  
+   Height="478" Margin="134,348,1386,254" />
+        <Button x:Name="captureimage" Width="100" Margin="284,503,1536,477" Content="Capture" Height="100" Click="captureimage_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Imagesused/captureimage.png"  />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="capture_" Content="Capture" HorizontalAlignment="Left" Margin="260,696,1511,330" VerticalAlignment="Top" Width="149" Height="54" Foreground="#FF006AB3" FontSize="36" Background="White" FontWeight="Bold" BorderThickness="0" Click="capture__Click"/>
+        <Border x:Name="history_border"    
+            BorderThickness="1"
+            BorderBrush="LightGray" 
+            CornerRadius="10"    
+            Background="White"    
+            Width="400"  
+            Height="478" Margin="761,348,759,254" />
+        <Button x:Name="historyimage" Width="100" Margin="911,503,909,477" Content="History" Height="100" Click="historyimage_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Imagesused/historyimage.png"  />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="history_" Content="History" HorizontalAlignment="Left" Margin="887,696,0,0" VerticalAlignment="Top" Width="149" Height="54" Foreground="#FF006AB3" FontSize="36" Background="White" FontWeight="Bold" BorderThickness="0" Click="history__Click"/>
+        <Border x:Name="settings_border"    
+            BorderThickness="1"
+            BorderBrush="LightGray" 
+            CornerRadius="10"    
+            Background="White"    
+            Width="400"  
+            Height="478" Margin="1385,348,135,254" />
+        <Button x:Name="settingimage" Width="100" Margin="1535,503,285,477" Content="Settings" Height="100" Click="settingimage_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Imagesused/settingimage.png"   />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="settings_" Content="Settings" HorizontalAlignment="Left" Margin="1511,696,0,0" VerticalAlignment="Top" Width="149" Height="54" Foreground="#FF006AB3" FontSize="36" Background="White" FontWeight="Bold" BorderThickness="0" Click="settings__Click"/>
+        <Button x:Name="logout1" Margin="1879,111,17,945" Click="logout1_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Imagesused/Logoutbigimage.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="logout2" Margin="1891,115,9,948" Click="logout2_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Imagesused/Logoutsmallimage.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+    </Grid>
+</Window>

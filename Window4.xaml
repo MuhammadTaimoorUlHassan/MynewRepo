@@ -1,0 +1,184 @@
+﻿<Window x:Class="LoginFenris.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginFenris"
+        mc:Ignorable="d"
+        ResizeMode="CanResize"
+        Width="1920"
+        Height="1080"
+        Title="Login">
+
+    <Grid Height="1080" Width="1920">
+        <Image Margin="721,62,899,912" Width="300" Height="90" Source="Imagesused/motion2coach.png" Stretch="Uniform" />
+        <Rectangle Height="2" Margin="10,179,3,898" Stroke="#FFF4BD00" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="2" Margin="10,185,3,892" Stroke="#FF7BB728" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="2" Margin="10,191,2,886" Stroke="#FF0469B4" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <Button Content="Customer Information" HorizontalAlignment="Stretch" Margin="371,286,1293,748" VerticalAlignment="Stretch" Foreground="White" Background="#FF006AB3" FontWeight="Bold" FontSize="18" Width="256" Height="46"/>
+        <Border    
+   BorderThickness="1"
+   BorderBrush="LightGray" 
+   CornerRadius="12"    
+   Background="#F3F5F9"    
+   Width="1200"    
+   Height="537" Margin="360,332,360,211" />
+        <Label Content="Basic Information" Margin="390,352,1355,683" FontSize="20" Foreground="#FF4A4A4A" FontWeight="Normal"/>
+        <Border    
+   BorderThickness="1.2"
+   BorderBrush="#6D696F" 
+   CornerRadius="2"    
+   Background="#F3F5F9"    
+   HorizontalAlignment="Stretch"    
+   VerticalAlignment="Stretch"    
+   Width="328"    
+   Height="56" Margin="438,423,1154,601" />
+        <Label Content="Name" Margin="447,407,1431,648" Foreground="#FF6D696F" Height="25.1" Background="#FFF3F5F9"/>
+        <Label Content="*" Margin="484,407,1421,654" Foreground="Red" Background="#FFF3F5F9"/>
+        <TextBox x:Name="username_" Margin="446,440,1166,618" TextWrapping="Wrap" Height="22" FontSize="16" Foreground="#FF1D2929" Background="#FFF3F5F9" BorderThickness="0"/>
+        <Border    
+            BorderThickness="1.2"
+            BorderBrush="#6D696F" 
+            CornerRadius="2"    
+            Background="#F3F5F9"    
+            Width="328"    
+            Height="56" Margin="804,423,788,601" />
+        <Label Content="Email" Margin="813,407,1065,648" Foreground="#FF6D696F" Height="25.1" Background="#FFF3F5F9"/>
+        <Label Content="*" Margin="850,407,1055,654" Foreground="Red" Background="#FFF3F5F9"/>
+        <TextBox x:Name="email_" Margin="812,440,800,611" TextWrapping="Wrap" FontSize="16" Foreground="#FF1D2929" Background="#FFF3F5F9" BorderThickness="0"/>
+        <Border    
+            BorderThickness="1.2"
+            BorderBrush="#6D696F" 
+            CornerRadius="2"    
+            Background="#F3F5F9"    
+            Width="328"    
+            Height="56" Margin="438,509,1154,508" />
+        <Label Content="Phone Number" Margin="447,497,1383,558" Foreground="#FF6D696F" Height="25.1" Background="#FFF3F5F9"/>
+        <Label Content="*" Margin="534,497,1371,564" Foreground="Red" Background="#FFF3F5F9"/>
+
+        <TextBox x:Name="phonenumber_" Margin="517,530,1166,528" TextWrapping="Wrap" Height="22" FontSize="16" Foreground="#FF1D2929" Background="#FFF3F5F9" BorderThickness="0"/>
+        <Border    
+            BorderThickness="1.2"
+            BorderBrush="#6D696F" 
+            CornerRadius="2"    
+            Background="#F3F5F9"    
+            Width="328"    
+            Height="56" Margin="804,511,788,513" />
+        <Label Content="Street" Margin="813,495,1065,560" Foreground="#FF6D696F" Height="25.1" Background="#FFF3F5F9"/>
+        <Label Content="*" Margin="850,495,1055,566" Foreground="Red" Background="#FFF3F5F9"/>
+        <TextBox x:Name="street_" Margin="812,528,800,530" TextWrapping="Wrap" Height="22" FontSize="16" Foreground="#FF1D2929" Background="#FFF3F5F9" BorderThickness="0"/>
+        <Border    
+            BorderThickness="1.2"
+            BorderBrush="#6D696F" 
+            CornerRadius="2"    
+            Background="#F3F5F9"    
+            Width="328"    
+            Height="56" Margin="438,602,1154,415" />
+        <Label Content="City" Margin="447,590,1431,465" Foreground="#FF6D696F" Height="25.1" Background="#FFF3F5F9"/>
+        <Label Content="*" Margin="473,590,1432,471" Foreground="Red" Background="#FFF3F5F9"/>
+        <TextBox x:Name="city_" Margin="446,623,1166,435" TextWrapping="Wrap" Height="22" FontSize="16" Foreground="#FF1D2929" Background="#FFF3F5F9" BorderThickness="0"/>
+        <Border    
+            BorderThickness="1.2"
+            BorderBrush="#6D696F" 
+            CornerRadius="2"    
+            Background="#F3F5F9"    
+            Width="328"    
+            Height="56" Margin="804,604,788,420" />
+        <Label Content="Zip Code" Margin="813,588,1049,467" Foreground="#FF6D696F" Height="25.1" Background="#FFF3F5F9"/>
+        <Label Content="*" Margin="866,588,1039,473" Foreground="Red" Background="#FFF3F5F9"/>
+        <TextBox x:Name="zipcode_" Margin="812,621,800,437" TextWrapping="Wrap" Height="22" FontSize="16" Foreground="#FF1D2929" Background="#FFF3F5F9" BorderThickness="0"/>
+        <Border    
+            BorderThickness="1.2"
+            BorderBrush="#6D696F" 
+            CornerRadius="2"    
+            Background="#F3F5F9"    
+            Width="328" Margin="438,695,1154,323" />
+        <Label Content="Country" Margin="447,679,1421,376" Foreground="#FF6D696F" Height="25.1" Background="#FFF3F5F9"/>
+        <Label Content="*" Margin="494,679,1411,382" Foreground="Red" Background="#FFF3F5F9"/>
+        
+        <ComboBox x:Name="country_" Margin="446,712,1166,334" Width="308" FontSize="16" VerticalAlignment="Center" IsEditable="True" IsTextSearchEnabled="True" Foreground="#FF1D2929" SelectionChanged="country__SelectionChanged">
+            
+            
+        </ComboBox>
+        <Border    
+            BorderThickness="1.2"
+            BorderBrush="#6D696F" 
+            CornerRadius="2"    
+            Background="#F3F5F9"    
+            Width="328"    
+            Height="56" Margin="438,788,1154,236" />
+        <Label Content="Role" Margin="447,772,1431,283" Foreground="#FF6D696F" Height="25.1" Background="#FFF3F5F9"/>
+        <Label Content="*" Margin="475,772,1430,289" Foreground="Red" Background="#FFF3F5F9"/>
+        <ComboBox x:Name = "role_" 
+            Margin = "446,805,1166,253" Width = "308" BorderBrush="White" OpacityMask="White" SelectionChanged="role__SelectionChanged" BorderThickness="0.5" FontSize="16" Height="22" Foreground="#FF1D2929"
+         >
+            <ComboBox.Background>
+                <SolidColorBrush Color="#FFF3F5F9" Opacity="1"/>
+            </ComboBox.Background>
+
+            <ComboBoxItem Content = "Admin" Name="admin" />
+            <ComboBoxItem Content = "Striker" Name="striker" />
+            <ComboBoxItem Content = "Coach" Name="coach"/>
+
+        </ComboBox>
+        <Border    
+            BorderThickness="1.2"
+            BorderBrush="#6D696F" 
+            CornerRadius="2"    
+            Background="#F3F5F9"    
+            Width="328"    
+            Height="56" Margin="795,788,797,236" />
+        <Label Content="Password" Margin="804,772,1055,283" Foreground="#FF6D696F" Height="25.1" Background="#FFF3F5F9"/>
+        <Label Content="*" Margin="859,772,1046,289" Foreground="Red" Background="#FFF3F5F9"/>
+
+        <PasswordBox x:Name="password_" Width="308" Margin="812,671,800,387" Height="22" FontSize="16" Foreground="#FF1D2929" Background="#FFF3F5F9" BorderThickness="0"/>
+        <Border    
+            BorderThickness="1.2"
+            BorderBrush="#6D696F" 
+            CornerRadius="2"    
+            Background="#F3F5F9"    
+            Width="328"    
+            Height="56" Margin="1149,788,443,236" />
+        <Label Content="Retype Password" Margin="1158,772,664,283" Foreground="#FF6D696F" Height="25.1" Background="#FFF3F5F9"/>
+        <Label Content="*" Margin="1252,772,653,289" Foreground="Red" Background="#FFF3F5F9"/>
+        <PasswordBox x:Name="retypepassword_" Width="308" Margin="1157,805,455,253" Height="22" FontSize="16" Foreground="#FF1D2929" Background="#FFF3F5F9" BorderThickness="0"/>
+        <Label Content="Gender" Margin="802,693,1057,355" Width="61" Height="32" FontSize="16" Foreground="#FF6D696F" Background="#FFF3F5F9"/>
+        <RadioButton x:Name="male_" Content="Male" GroupName="Gender_" Margin="810,734,1051,323" Foreground="#FF494949" Height="23" FontSize="18px" IsChecked="True" Checked="male__Checked"/>
+        <RadioButton x:Name="female_" Content="Female" GroupName="Gender_" Margin="891,734,951,323" Foreground="#FF494949" Height="23" FontSize="18px" Checked="female__Checked"/>
+        <Label Content="Handedness" Margin="1004,693,819,355" Height="32" FontSize="16" Foreground="#FF6D696F" Background="#FFF3F5F9"/>
+        <RadioButton x:Name="righthandbtn" Content="Right Hand" GroupName="handedness_" Margin="1010,734,800,323" Foreground="#FF494949" Height="23" FontSize="18px" Checked="righthandbtn_Checked"/>
+        <RadioButton x:Name="lefthandbtn" Content="Left Hand" GroupName="handedness_" Margin="1132,734,685,323" Foreground="#FF494949" Height="23" FontSize="18px" Checked="lefthandbtn_Checked"/>
+        <Button Content="Register" Margin="1162,368,660,668" Foreground="White" Background="#FF006AB3" FontSize="16" Width="97" Height="44" Click="Button_Click_2"/>
+        <Button x:Name="uploadpic_" Content="Upload Picture" Margin="1230,622,514,418" Foreground="White" Background="#FF006AB3" FontSize="18" Width="176" Height="40" Click="Button_Click"/>
+        <Image x:Name="newimagee" Height="207" Margin="1230,395,514,478" Width="176" Source="{Binding newImg}"/>
+
+    </Grid>
+</Window>
